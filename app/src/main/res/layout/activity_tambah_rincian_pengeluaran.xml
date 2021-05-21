@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="198dp"
+        android:background="@color/biru"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="16dp"
+            android:text="@string/tambah_pengeluaran"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/deep_blue" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/corner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="-70dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/sp_bg"
+        android:orientation="vertical"
+        android:paddingTop="22dp"
+        android:paddingBottom="22dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/sp_bg"
+            android:orientation="vertical">
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_id_rincian_pengeluaran"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:paddingLeft="16dp"-->
+<!--                android:text="Id Rincian Pengeluaran"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="18sp" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/et_inputid_rincian_pengeluaran"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="60dp"-->
+<!--                android:layout_marginBottom="20dp"-->
+<!--                android:background="@drawable/et_input_data"-->
+<!--                android:hint="Id Rincian Pengeluaran"-->
+<!--                android:inputType="number"-->
+<!--                android:paddingLeft="16dp"-->
+<!--                android:textColor="@color/black" />-->
+
+            <TextView
+                android:id="@+id/tv_id_kategori_pengeluaran"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="16dp"
+                android:text="Id Kategori Pengeluaran"
+                android:textColor="@color/black"
+                android:enabled="false"
+                android:textSize="18sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/et_input_data"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="3">
+                <Spinner
+                    android:id="@+id/sp_inputid_kategori_pengeluaran"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:hint="Spiner nii harus nyaa"
+                    android:inputType="number"
+                    android:paddingLeft="16dp"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_id_periode_laporan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="16dp"
+                android:text="Id Periode Laporan"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et_inputid_periode_laporan"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/et_input_data"
+                android:hint="Id Periode Laporan"
+                android:enabled="false"
+                android:inputType="number"
+                android:paddingLeft="16dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_qty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="16dp"
+                android:text="Quantity"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et_inputqty"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/et_input_data"
+                android:hint="exp: 1"
+                android:inputType="number"
+                android:paddingLeft="16dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="16dp"
+                android:text="Total"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et_inputtotal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/et_input_data"
+                android:hint="exp: Rp10.000"
+                android:inputType="number"
+                android:paddingLeft="16dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_id_admin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="16dp"
+                android:text="Id Admin"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et_inputid_admin"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:enabled="false"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/et_input_data"
+                android:hint="Id Admin"
+                android:inputType="number"
+                android:paddingLeft="16dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_uraian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="16dp"
+                android:text="Uraian"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et_inputuraian"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/et_input_data"
+                android:hint="exp: Sewa Gudang Oktober 2020"
+                android:paddingLeft="16dp"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_satuan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="16dp"
+                android:text="Satuan"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et_inputsatuan"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/et_input_data"
+                android:hint="exp: Bulan"
+                android:paddingLeft="16dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_tanggal_pencatatan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="16dp"
+                android:text="Tanggal Pencatatan"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et_inputtanggal_pencatatan"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/et_input_data"
+                android:hint="exp: d-m-y"
+                android:inputType="datetime"
+                android:paddingLeft="16dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_tanggal_pelunasan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="16dp"
+                android:text="Tanggal Pelunasan"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et_inputtanggal_pelunasan"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/et_input_data"
+                android:hint="exp: d-m-y"
+                android:inputType="datetime"
+                android:paddingLeft="16dp"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="50dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="59dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/biru"
+                    android:text="Submit" />
+
+                <Button
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="59dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/light_gray"
+                    android:text="Cancel"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SIPASAR</string>
+    <string name="judul_aplikasi">Modul Pencatatan Pengeluaran Pasar Lainnya</string>
+    <string name="tambah_pengeluaran">Tambah Pencatatan Pengeluaran Pasar</string>
+    <string name="edit_pengeluaran">Edit Pencatatan Pengeluaran Pasar</string>
+    <string name="detail_pengeluaran">Detail Pencatatan Pengeluaran Pasar</string>
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+
+    <string-array name="priode">
+        <item>Kuartal 1</item>
+        <item>Kuartal 2</item>
+        <item>Kuartal 3</item>
+    </string-array>
+</resources>
